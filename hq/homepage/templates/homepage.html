@@ -29,10 +29,36 @@
     
     <!-- Temporary navbar container fix -->
     <style>
-    .navbar-toggler {
+	.btn-primary {
+		color: #fff;
+		background-color: #f36d44;
+		border-color: #f36d44;
+	}
+	.btn-primary:hover {
+		color: #fff;
+		background-color: #6b6b6b;
+		border-color: #6b6b6b;
+	}
+	.bg-primary {
+		background-color: #f36d44 !important; }
+	.navbar-toggler {
         z-index: 1;
     }
-
+	.bg-dark {
+		background-color: #434343 !important;
+		color: white; }
+	hr {
+		border-color: #F05F40;
+		border-width: 3px;
+		max-width: 1000px; }
+	hr.dark {
+		border-color: #141414;
+		border-width: 3px;
+		max-width: 1000px;
+	}
+	hr.invis {
+		border: 10px solid rgba(0,0,0,0);
+	}
     @media (max-width: 576px) {
         nav > .container {
             width: 100%;
@@ -71,7 +97,7 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading">We're here to help queue</h1>
-                <hr>
+                <hr class="invis">
 				<a class="btn btn-primary btn-xl" href="#about">Sign Up Today</a>
 				<p></p>
 				<a class="btn btn-primary btn-xl" href="#about">Sign In</a>                
@@ -84,7 +110,7 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
                     <h2 class="section-heading text-white">Queued for Your Success</h2>
-                    <hr class="light">
+                    <hr class="light" width="385px">
                     <p class="text-faded">HQ allows students in a classroom to request the attention of the instructor by adding themself to a list. 
 					The instructor can answer the student's needs in the order the students asked the questions to prevent students from getting too lost.</p>
                     <a class="btn btn-default btn-xl sr-button" href="#services">Check it out!</a>
@@ -98,7 +124,7 @@
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Why use HQ?</h2>
-                    <hr class="primary">
+                    <hr class="primary" width="215px";>
                 </div>
             </div>
         </div>
@@ -136,12 +162,12 @@
         </div>
     </section>
 	
-    <section class="no-padding" id="contact">
+    <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
                     <h2 class="section-heading">Contact Us!</h2>
-                    <hr class="primary">
+                    <hr class="primary" width="190px">
                     <p>Questions? Concerns? Suggestions? Contact the developers below!</p>
                 </div>
                 <div class="col-lg-4 text-center">
