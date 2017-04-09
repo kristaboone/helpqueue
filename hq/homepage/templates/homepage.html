@@ -26,13 +26,39 @@
 
 	<!-- Favicon -->
 	<link rel="icon" href="{% static 'img/dummy.ico' %}">
-
+    
     <!-- Temporary navbar container fix -->
     <style>
-    .navbar-toggler {
+	.btn-primary {
+		color: #fff;
+		background-color: #f36d44;
+		border-color: #f36d44;
+	}
+	.btn-primary:hover {
+		color: #fff;
+		background-color: #6b6b6b;
+		border-color: #6b6b6b;
+	}
+	.bg-primary {
+		background-color: #f36d44 !important; }
+	.navbar-toggler {
         z-index: 1;
     }
-
+	.bg-dark {
+		background-color: #434343 !important;
+		color: white; }
+	hr {
+		border-color: #F05F40;
+		border-width: 3px;
+		max-width: 1000px; }
+	hr.dark {
+		border-color: #141414;
+		border-width: 3px;
+		max-width: 1000px;
+	}
+	hr.invis {
+		border: 10px solid rgba(0,0,0,0);
+	}
     @media (max-width: 576px) {
         nav > .container {
             width: 100%;
@@ -60,9 +86,6 @@
                         <a class="nav-link" href="#features">Features</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#portfolio">Portfolio</a>
-                    </li>
-                    <li class="nav-item">
                         <a class="nav-link" href="#contact">Contact</a>
                     </li>
                 </ul>
@@ -84,21 +107,22 @@
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
-                    <h2 class="section-heading text-white">We've got what you need!</h2>
-                    <hr class="light">
-                    <p class="text-faded">Start Bootstrap has everything you need to get your new website up and running in no time! All of the templates and themes on Start Bootstrap are open source, free to download, and easy to use. No strings attached!</p>
-                    <a class="btn btn-default btn-xl sr-button" href="#services">Get Started!</a>
+                    <h2 class="section-heading text-white">Queued for Your Success</h2>
+                    <hr class="light" width="385px">
+                    <p class="text-faded">HQ allows students in a classroom to request the attention of the instructor by adding themself to a list. 
+					The instructor can answer the student's needs in the order the students asked the questions to prevent students from getting too lost.</p>
+                    <a class="btn btn-default btn-xl sr-button" href="#services">Check it out!</a>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="features">
+    <section class="bg-dark" id="features">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">At Your Service</h2>
-                    <hr class="primary">
+                    <h2 class="section-heading">Why use HQ?</h2>
+                    <hr class="primary" width="215px";>
                 </div>
             </div>
         </div>
@@ -107,138 +131,41 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Sturdy Templates</h3>
-                        <p class="text-muted">Our templates are updated regularly so they don't break.</p>
+                        <h3>Instructor Abilities</h3>
+                        <p class="text-muted">Set up your classroom, edit tables, add teaching assistants, and manage the queue.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Ready to Ship</h3>
-                        <p class="text-muted">You can use this theme as is, or you can make changes!</p>
+                        <h3>Teaching Assistant Abilities</h3>
+                        <p class="text-muted">Assist the instructor in managing the queue.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Up to Date</h3>
-                        <p class="text-muted">We update dependencies to keep things fresh.</p>
+                        <h3>Student Abilities</h3>
+                        <p class="text-muted">Add or remove yourself from the HQ if you need help in class.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-heart text-primary sr-icons"></i>
                         <h3>Made with Love</h3>
-                        <p class="text-muted">You have to make your websites with love these days!</p>
+                        <p class="text-muted">Developed with benefitting education in mind.</p>
                     </div>
                 </div>
             </div>
         </div>
     </section>
-
-    <section class="no-padding" id="portfolio">
-        <div class="container-fluid">
-            <div class="row no-gutter popup-gallery">
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/1.jpg' %}">
-                        <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/1.jpg' %}" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/2.jpg' %}">
-                        <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/2.jpg' %}" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/3.jpg' %}">
-                        <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/3.jpg' %}" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/4.jpg' %}">
-                        <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/4.jpg' %}" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/5.jpg' %}">
-                        <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/5.jpg' %}" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-                <div class="col-lg-4 col-sm-6">
-                    <a class="portfolio-box" href="{% static 'img/portfolio/fullsize/6.jpg' %}">
-                        <img class="img-fluid" src="{% static 'img/portfolio/thumbnails/6.jpg' %}" alt="">
-                        <div class="portfolio-box-caption">
-                            <div class="portfolio-box-caption-content">
-                                <div class="project-category text-faded">
-                                    Category
-                                </div>
-                                <div class="project-name">
-                                    Project Name
-                                </div>
-                            </div>
-                        </div>
-                    </a>
-                </div>
-            </div>
-        </div>
-    </section>
-
+	
     <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2 text-center">
                     <h2 class="section-heading">Contact Us!</h2>
-                    <hr class="primary">
+                    <hr class="primary" width="190px">
                     <p>Questions? Concerns? Suggestions? Contact the developers below!</p>
                 </div>
                 <div class="col-lg-4 text-center">

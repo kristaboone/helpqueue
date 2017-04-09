@@ -1,4 +1,4 @@
 from django.apps import AppConfig
 
-class HomeConfig(AppConfig):
-    name = 'home'
+class HomepageConfig(AppConfig):
+    name = 'homepage'
