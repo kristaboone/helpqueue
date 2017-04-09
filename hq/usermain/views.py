@@ -15,12 +15,15 @@ class MainView(View):
         return render(request, template)
 
     def get_page(self, request):
-        group = request.user.groups.all()
-        # check user type and set page to appropriate user
-        if group == "Instructor":
-            page = "instructor_main.html"
-        elif group == "Student":
-            page = "student_main.html"
+        grouplist = request.user.groups.all()
+
+        if len(grouplist) > 0:
+            group = str(grouplist[0])
+            # check user type and set page to appropriate user
+            if group == "Instructor":
+                page = "instructor_main.html"
+            else:
+                page = "student_main.html"
         else:
-            page = ""
+            raise Exception('You are not part of any groups!')
         return page

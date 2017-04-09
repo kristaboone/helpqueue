@@ -20,24 +20,8 @@ class HomeView(View):
 def login_form(request):
     return render(request, 'login.html')
 
-def login(request):
-    if 'q' in request.GET:
-            message = 'You submitted a thing'
-            request.GET['q']
-    else:
-            message = 'Form empty.'
-    return HttpResponse(message)
-
 def register_form(request):
     return render(request, 'register.html')
-
-def register(request):
-    if 'q' in request.GET:
-            message = 'You submitted a thing'
-            request.GET['q']
-    else:
-            message = 'Form empty.'
-    return HttpResponse(message)
 
 def loggedIn(request):
     return HttpResponse("yay it worked!")
