@@ -26,7 +26,7 @@
 
 	<!-- Favicon -->
 	<link rel="icon" href="{% static 'img/dummy.ico' %}">
-    
+
     <!-- Temporary navbar container fix -->
     <style>
 	.btn-primary {
@@ -97,8 +97,9 @@
         <div class="header-content">
             <div class="header-content-inner">
                 <h1 id="homeHeading">We're here to help queue</h1>
-                <hr>
+                <hr class="invis">
 				<a class="btn btn-primary btn-xl" href="/login">Log In</a>
+				<a class="btn btn-primary btn-xl" href="/register">Register</a>
             </div>
         </div>
     </header>
@@ -109,9 +110,9 @@
                 <div class="col-lg-8 offset-lg-2 text-center">
                     <h2 class="section-heading text-white">Queued for Your Success</h2>
                     <hr class="light" width="385px">
-                    <p class="text-faded">HQ allows students in a classroom to request the attention of the instructor by adding themself to a list. 
+                    <p class="text-faded">HQ allows students in a classroom to request the attention of the instructor by adding themself to a queue.
 					The instructor can answer the student's needs in the order the students asked the questions to prevent students from getting too lost.</p>
-                    <a class="btn btn-default btn-xl sr-button" href="#services">Check it out!</a>
+                    <a class="btn btn-default btn-xl sr-button" href="https://github.com/kristavan/helpqueue">Check it out!</a>
                 </div>
             </div>
         </div>
@@ -131,21 +132,21 @@
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-diamond text-primary sr-icons"></i>
-                        <h3>Instructor Abilities</h3>
+                        <h3>Instructors</h3>
                         <p class="text-muted">Set up your classroom, edit tables, add teaching assistants, and manage the queue.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-paper-plane text-primary sr-icons"></i>
-                        <h3>Teaching Assistant Abilities</h3>
+                        <h3>Teaching Assistants</h3>
                         <p class="text-muted">Assist the instructor in managing the queue.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
                         <i class="fa fa-4x fa-newspaper-o text-primary sr-icons"></i>
-                        <h3>Student Abilities</h3>
+                        <h3>Students</h3>
                         <p class="text-muted">Add or remove yourself from the HQ if you need help in class.</p>
                     </div>
                 </div>
@@ -159,7 +160,7 @@
             </div>
         </div>
     </section>
-	
+
     <section id="contact">
         <div class="container">
             <div class="row">
