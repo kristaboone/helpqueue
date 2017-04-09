@@ -14,6 +14,16 @@ class HomeView(View):
 		# print(request.POST)
 		# print(request.POST.get("url"))
         form = SubmitUrlForm(request.POST)
-
         template = "homepage.html"
         return render(request, template)
+
+def login_form(request):
+    return render(request, 'login.html')
+
+def login(request):
+    if 'q' in request.GET:
+            message = 'You submitted a thing'
+            request.GET['q']
+    else:
+            message = 'Form empty.'
+    return HttpResponse(message)
