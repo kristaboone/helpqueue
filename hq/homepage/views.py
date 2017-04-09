@@ -27,3 +27,14 @@ def login(request):
     else:
             message = 'Form empty.'
     return HttpResponse(message)
+
+def register_form(request):
+    return render(request, 'register.html')
+
+def register(request):
+    if 'q' in request.GET:
+            message = 'You submitted a thing'
+            request.GET['q']
+    else:
+            message = 'Form empty.'
+    return HttpResponse(message)

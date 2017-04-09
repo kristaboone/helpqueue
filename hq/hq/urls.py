@@ -21,6 +21,7 @@ from homepage.views import *
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
     url(r'^login/', login_form),
+    url(r'^register/', register_form),
     url(r'^$', HomeView.as_view()),
     # url(r'^login/$', auth_views.login, name='login'),
 
