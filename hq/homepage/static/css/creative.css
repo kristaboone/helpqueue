@@ -9,16 +9,23 @@ body {
   width: 100%; }
 
 body {
-  font-family: 'Merriweather', 'Helvetica Neue', Arial, sans-serif; }
+  font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
 
 hr {
   border-color: #F05F40;
   border-width: 3px;
-  max-width: 50px; }
+  max-width: 1000px; }
 
 hr.light {
   border-color: white; }
 
+hr.dark {
+	border-color: #141414;
+	border-width: 3px;
+	max-width: 1000px;
+}
+hr.invis {
+	border: 10px solid rgba(0,0,0,0); }
 a {
   -webkit-transition: all 0.2s;
   -moz-transition: all 0.2s;
@@ -41,10 +48,10 @@ p {
   margin-bottom: 20px; }
 
 .bg-primary {
-  background-color: #F05F40 !important; }
+  background-color: #f36d44 !important; }
 
 .bg-dark {
-  background-color: #222222 !important;
+  background-color: #434343 !important;
   color: white; }
 
 .text-faded {
