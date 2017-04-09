@@ -25,7 +25,7 @@
     <link href="{% static 'css/creative.min.css' %}" rel="stylesheet">
 
 	<!-- Favicon -->
-	<link rel="icon" href="{% static 'img/dummy.ico' %}">
+	<link rel="icon" href="{% static 'img/hqlogoicon.ico' %}">
 
     <!-- Temporary navbar container fix -->
     <style>
@@ -34,26 +34,35 @@
 	.text-blank {
 		padding: 1em;
 		color: rgba(255, 255, 255, 0); }
+		.text-faded90 {
+  color: rgba(255, 255, 255, .9); }
+  .text-faded70 {
+  color: rgba(255, 255, 255, .7); }
 	.btn-primary {
 		color: #fff;
-		background-color: #f36d44;
-		border-color: #f36d44;
+		background-color: #FB7B56;
+		border-color: #FB7B56;
 	}
-	.btn-primary:hover {
-		color: #fff;
-		background-color: #6b6b6b;
-		border-color: #6b6b6b;
+	.btn-secondary {
+		color: white;
+		background-color: #5c5c5c;
+		border-color: #5c5c5c;
+	}
+	.btn-secondary:hover {
+		color: white;
+		background-color: #434343;
+		border-color: #434343;
 	}
 	.bg-primary {
-		background-color: #f36d44 !important; }
+		background-color: #FB7B56 !important; }
 	.navbar-toggler {
         z-index: 1;
     }
 	.bg-dark {
-		background-color: #434343 !important;
+		background-color: #505050 !important;
 		color: white; }
 	hr {
-		border-color: #F05F40;
+		border-color: #FB7B56;
 		border-width: 3px;
 		max-width: 1000px; }
 	hr.dark {
@@ -63,6 +72,20 @@
 	}
 	hr.invis {
 		border: 10px solid rgba(0,0,0,0);
+	}
+	.text-title {
+		color: white;
+		text-shadow: 1px 1px 2px gray, 0 0 25px #0f0f0f, 0 0 5px #FFFFFF;
+	}
+	.btn-Lamanda {
+		margin-left: 64px;
+		margin-right: 110px;
+		margin-top: 25px;
+	}
+	.btn-Ramanda {
+		margin-left: 125px;
+		margin-right: 60px;
+		margin-top: 25px;
 	}
     @media (max-width: 576px) {
         nav > .container {
@@ -101,10 +124,10 @@
     <header class="masthead">
         <div class="header-content">
             <div class="header-content-inner">
-                <h1 id="homeHeading">We're here to help queue</h1>
+                <h1 id="homeHeading" class="text-title">We're here to help queue</h1>
                 <hr class="invis">
-				<a class="btn btn-primary btn-xl" href="/login">Log In</a>
-				<a class="btn btn-primary btn-xl" href="/register">Register</a>
+				<a class="btn btn-primary btn-xl btn-Lamanda" margin-top="1000px" href="/login">Log In</a>
+				<a class="btn btn-primary btn-xl btn-Ramanda" href="/register">Register</a>
             </div>
         </div>
     </header>
@@ -115,9 +138,9 @@
                 <div class="col-lg-8 offset-lg-2 text-center">
                     <h2 class="section-heading text-white">Queued for Your Success</h2>
                     <hr class="light" width="385px">
-                    <p class="text-faded">HQ allows students in a classroom to request the attention of the instructor by adding themself to a queue.
+                    <p class="text-faded90">HQ allows students in a classroom to request the attention of the instructor by adding themself to a queue.
 					The instructor can answer the student's needs in the order the students asked the questions to prevent students from getting too lost.</p>
-                    <a class="btn btn-default btn-xl sr-button" href="https://github.com/kristavan/helpqueue">Check it out!</a>
+                    <a class="btn btn-default btn-xl sr-button btn-secondary" href="https://github.com/kristavan/helpqueue">Check it out!</a>
                 </div>
             </div>
         </div>
@@ -136,18 +159,18 @@
             <div class="row">
                 <div class="col-lg-3 col-md-6 text-center">
                     <div class="service-box">
+                        <i class="fa fa-4x fa-commenting-o text-primary sr-icons"></i>
+						<p class="text-blank"></p>
+                        <h3>Q & A</h3>
+                        <p class="text-faded70">Increase communication within the classroom.</p>
+                    </div>
+                </div>
+				<div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
                         <i class="fa fa-4x fa-user-o text-primary sr-icons"></i>
 						<p class="text-blank"></p>
 						<h3>Instructors</h3>
-                        <p class="text-faded">Set up your classroom, edit tables, add teaching assistants, and manage the queue.</p>
-                    </div>
-                </div>
-                <div class="col-lg-3 col-md-6 text-center">
-                    <div class="service-box">
-                        <i class="fa fa-4x fa-commenting-o text-primary sr-icons"></i>
-						<p class="text-blank"></p>
-                        <h3>Teaching Assistants</h3>
-                        <p class="text-faded">Assist the instructor in managing the queue.</p>
+                        <p class="text-faded70">Set up your classroom, edit tables, add teaching assistants, and manage the queue.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -155,7 +178,7 @@
                         <i class="fa fa-4x fa-question-circle-o text-primary sr-icons"></i>
 						<p class="text-blank"></p>
                         <h3>Students</h3>
-                        <p class="text-faded">Add or remove yourself from the HQ if you need help in class.</p>
+                        <p class="text-faded70">Add or remove yourself from the HQ if you need help in class.</p>
                     </div>
                 </div>
                 <div class="col-lg-3 col-md-6 text-center">
@@ -163,7 +186,7 @@
                         <i class="fa fa-4x fa-heart-o text-primary sr-icons"></i>
 						<p class="text-blank"></p>
                         <h3>Made with Love</h3>
-                        <p class="text-faded">Developed with benefitting education in mind.</p>
+                        <p class="text-faded70">Developed with benefitting education in mind.</p>
                     </div>
                 </div>
             </div>
