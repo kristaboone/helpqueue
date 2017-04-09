@@ -21,10 +21,12 @@ from usermain.views import *
 
 urlpatterns = [
     url(r'^admin/', admin.site.urls),
-    url(r'^login/', login_form),
+    url(r'^login/$', auth_views.login, {'template_name': 'login.html'}, name='login'),
+    url(r'^logout/$', auth_views.logout, name='logout'),
     url(r'^register/', register_form),
     url(r'^usermain/', MainView.as_view()),
     url(r'^$', HomeView.as_view()),
+    url(r'^accounts/profile', MainView.as_view()),
     # url(r'^login/$', auth_views.login, name='login'),
 
 ]

@@ -38,3 +38,6 @@ def register(request):
     else:
             message = 'Form empty.'
     return HttpResponse(message)
+
+def loggedIn(request):
+    return HttpResponse("yay it worked!")
