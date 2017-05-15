@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <meta name="description" content="">
+    <meta name="author" content="">
+
+    <title>Help Queue</title>
+
+    <!--Bootstrap core CSS -->
+    {% load static %}
+    <link href="{% static 'vendor/bootstrap/css/bootstrap.min.css' %}" rel="stylesheet">
+
+    <!-- Custom fonts for this template -->
+    <link href="{% static 'vendor/font-awesome/css/font-awesome.min.css' %}" rel="stylesheet" type="text/css">
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:300italic,400italic,600italic,700italic,800italic,400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href='https://fonts.googleapis.com/css?family=Merriweather:400,300,300italic,400italic,700,700italic,900,900italic' rel='stylesheet' type='text/css'>
+
+    <!-- Plugin CSS -->
+    <link href="{% static 'vendor/magnific-popup/magnific-popup.css' %}" rel="stylesheet">
+
+    <!-- Custom styles for this template -->
+    <link href="{% static 'css/creative.min.css' %}" rel="stylesheet">
+
+	<!-- Favicon -->
+	<link rel="icon" href="{% static 'img/hqlogoicon.ico' %}">
+
+    <!-- Temporary navbar container fix -->
+    <style>
+	body {
+		font-family: 'Open Sans', 'Helvetica Neue', Arial, sans-serif; }
+	.text-blank {
+		padding: 1em;
+		color: rgba(255, 255, 255, 0); }
+	.text-faded90 {
+		color: rgba(255, 255, 255, .9); }
+	.text-faded70 {
+		color: rgba(255, 255, 255, .7); }
+	.btn-primary {
+		color: #fff;
+		background-color: #FB7B56;
+		border-color: #FB7B56;
+	}
+	.btn-primary:hover {
+		color: white;
+		background-color: #434343;
+		border-color: #434343;
+	}
+	.btn-secondary {
+		color: white;
+		background-color: #5c5c5c;
+		border-color: #5c5c5c;
+	}
+	.btn-secondary:hover {
+		color: white;
+		background-color: #434343;
+		border-color: #434343;
+	}
+	.bg-primary {
+		background-color: #FB7B56 !important; }
+	.navbar-toggler {
+        z-index: 1;
+    }
+	.bg-dark {
+		background-color: #505050 !important;
+		color: white; }
+	hr {
+		border-color: #FB7B56;
+		border-width: 3px;
+		max-width: 1000px; }
+	hr.dark {
+		border-color: #141414;
+		border-width: 3px;
+		max-width: 1000px;
+	}
+	hr.invis {
+		border: 10px solid rgba(0,0,0,0);
+	}
+	.text-title {
+		color: white;
+		text-shadow: 1px 1px 2px gray, 0 0 25px #0f0f0f, 0 0 5px #FFFFFF;
+	}
+	.btn-Lamanda {
+		margin-left: 64px;
+		margin-right: 110px;
+		margin-top: 25px;
+	}
+	.btn-Ramanda {
+		margin-left: 125px;
+		margin-right: 60px;
+		margin-top: 25px;
+	}
+    @media (max-width: 576px) {
+        nav > .container {
+            width: 100%;
+        }
+    }
+    </style>
+
+</head>
+
+<body id="page-top">
+
+    <!-- Navigation -->
+    <nav class="navbar fixed-top navbar-toggleable-md navbar-light" id="mainNav">
+        <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarExample" aria-controls="navbarExample" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="container">
+            <a class="navbar-brand" href="#page-top">Help Queue</a>
+            <div class="collapse navbar-collapse" id="navbarExample">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#about">About</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#features">Why HQ?</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#contact">Contact Us</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <header class="masthead">
+        <div class="header-content">
+            <div class="header-content-inner">
+                <h1 id="homeHeading" class="text-title">We're here to help queue</h1>
+                <hr class="invis">
+				<a class="btn btn-primary btn-xl btn-Lamanda" margin-top="1000px" href="/login">Log In</a>
+				<a class="btn btn-primary btn-xl btn-Ramanda" href="/register">Register</a>
+            </div>
+        </div>
+    </header>
+
+    <section class="bg-primary" id="about">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <h2 class="section-heading text-white">Queued for Your Success</h2>
+                    <hr class="light" width="385px">
+                    <p class="text-faded90">HQ allows students in a classroom to request the attention of the instructor by adding themself to a queue.
+					The instructor can answer the student's needs in the order the students asked the questions to prevent students from getting too lost.</p>
+                    <a class="btn btn-default btn-xl sr-button btn-secondary" href="https://github.com/kristavan/helpqueue">Check it out!</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="bg-dark" id="features">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Why use HQ?</h2>
+                    <hr class="primary" width="215px";>
+                </div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-commenting-o text-primary sr-icons"></i>
+						<p class="text-blank"></p>
+                        <h3>Q & A</h3>
+                        <p class="text-faded70">Increase communication within the classroom.</p>
+                    </div>
+                </div>
+				<div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-user-o text-primary sr-icons"></i>
+						<p class="text-blank"></p>
+						<h3>Instructors</h3>
+                        <p class="text-faded70">Set up your classroom, edit tables, add teaching assistants, and manage the queue.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-question-circle-o text-primary sr-icons"></i>
+						<p class="text-blank"></p>
+                        <h3>Students</h3>
+                        <p class="text-faded70">Add or remove yourself from the HQ if you need help in class.</p>
+                    </div>
+                </div>
+                <div class="col-lg-3 col-md-6 text-center">
+                    <div class="service-box">
+                        <i class="fa fa-4x fa-heart-o text-primary sr-icons"></i>
+						<p class="text-blank"></p>
+                        <h3>Made with Love</h3>
+                        <p class="text-faded70">Developed with benefitting education in mind.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2 text-center">
+                    <h2 class="section-heading">Contact Us!</h2>
+                    <hr class="primary" width="190px">
+                    <p>Questions? Concerns? Suggestions? Contact the developers below!</p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+					<p>John Klaassen</p>
+                    <p><a href="mailto:your-email@your-domain.com">klaassen.2@wright.edu</a></p>
+                </div>
+				<div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+					<p>Krista Vanderhorst</p>
+                    <p><a href="mailto:your-email@your-domain.com">vanderhorst.20@wright.edu</a></p>
+                </div>
+                <div class="col-lg-4 text-center">
+                    <i class="fa fa-envelope-o fa-3x sr-contact"></i>
+					<p>Hannah Muetzel</p>
+                    <p><a href="mailto:your-email@your-domain.com">muetzel.2@wright.edu</a></p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Bootstrap core JavaScript -->
+    <script src="{% static 'vendor/jquery/jquery.min.js' %}"></script>
+    <script src="{% static 'vendor/tether/tether.min.js' %}"></script>
+    <script src="{% static 'vendor/bootstrap/js/bootstrap.min.js' %}"></script>
+
+    <!-- Plugin JavaScript -->
+    <script src="{% static 'vendor/jquery-easing/jquery.easing.min.js' %}"></script>
+    <script src="{% static 'vendor/scrollreveal/scrollreveal.min.js' %}"></script>
+    <script src="{% static 'vendor/magnific-popup/jquery.magnific-popup.min.js' %}"></script>
+
+    <!-- Custom scripts for this template -->
+    <script src="{% static 'js/creative.min.js' %}"></script>
+
+</body>
+
+</html>
